@@ -1,0 +1,21 @@
+{
+  "name": "koa-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server:start": "pm2 start koa.js",
+    "server:stop": "pm2 stop koa.js",
+    "client": "node client.js",
+    "build": "yarn server:start && yarn client && yarn server:stop",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.13.1",
+    "node-fetch": "^2.6.1",
+    "pm2": "^5.1.0",
+    "write": "^2.0.0"
+  }
+}
